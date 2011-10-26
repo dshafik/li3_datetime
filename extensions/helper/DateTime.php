@@ -18,7 +18,7 @@ class DateTime extends \lithium\template\Helper {
 	 * @param string [$date] A date/time string
 	 * @param array [$options] Optional options.
 	 *              - inputFormat: Date Format (default: DateTime::ISO8601)
-	 *				- outputDateFormat: Format for output dates (that can't be friendly) (default: "l, F dS, Y")
+	 *				- outputDateFormat: Format for output dates (that can't be friendly) (default: "l, F jS, Y")
 	 *				- ouputTimeForm: Format for output times (that can't be friendly) (default: "g:ia")
 	 *              - template: Name of the template that will be rendered.
 	 *              - data: Additional data for the template.
@@ -29,7 +29,7 @@ class DateTime extends \lithium\template\Helper {
 		$defaults = array(
 			'type' => 'element',
 			'inputFormat' => \DateTime::ISO8601,
-			'outputDateFormat' => 'l, F dS, Y',
+			'outputDateFormat' => 'l, F jS, Y',
 			'outputTimeFormat' => 'g:ia',
 			'template' => 'fuzzy',
 			'data' => array(),
